@@ -50,9 +50,29 @@
     display: flex;
     margin: 2px auto 32px;
     padding: 0 16px;
-    max-width: 960px;
+    max-width: 1260px;
     flex-direction: column;
     align-items: center;
   }
+ 
+  .trails-container {
+    display:flex;
+ 
+    .trails {
+        display:flex;
+        flex-direction: column;
+    
+        .trail {
+            display:flex;
+            padding-right:30px;
+            padding-bottom:20px;
+            p {
+                color:var(--bs-nav-link-hover-color);
+                font-size:22px;
+                padding-left:10px;
+            }
 
+        }  
+    }
+}
   
