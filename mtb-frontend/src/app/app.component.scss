@@ -6,6 +6,7 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-image: "assets/mtb-main.png";
   }
 
   h1,
@@ -57,19 +58,30 @@
  
   .trails-container {
     display:flex;
- 
+    .trail-map {
+        padding-right: 10px;
+    }
     .trails {
         display:flex;
         flex-direction: column;
-    
+        img {
+            max-height: 36px;
+        }
+        &.right {
+            img {
+                max-height: 30px;
+                max-width: 30px;
+            }
+        }
         .trail {
             display:flex;
             padding-right:30px;
             padding-bottom:20px;
+            padding-left:1px;
             p {
                 color:var(--bs-nav-link-hover-color);
-                font-size:22px;
-                padding-left:10px;
+                font-size:20px;
+                padding-left:3px;
             }
 
         }  
